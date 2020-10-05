@@ -1,0 +1,244 @@
+[
+  {
+    "at_scene_time": "2012-12-19T16 : 56 : 00.000",
+    "cad_cdw_id": "1000012",
+    "cad_event_number": "12000432682",
+    "census_tract": "5301.3000",
+    "district_sector": "U",
+    "event_clearance_code": "220",
+    "event_clearance_date": "2012-12-19T18 : 30 : 00.000",
+    "event_clearance_description": "MENTAL COMPLAINT",
+    "event_clearance_group": "MENTAL HEALTH",
+    "event_clearance_subgroup": "MENTAL CALL",
+    "general_offense_number": "2012432682",
+    "hundred_block_location": "15 AV NE / NE 45 ST",
+    "incident_location": {
+      "type": "Point",
+      "coordinates": [
+        -122.311997,
+        47.66126
+      ]
+    },
+    "initial_type_description": "DISTURBANCE, MISCELLANEOUS/OTHER",
+    "initial_type_group": "DISTURBANCES",
+    "initial_type_subgroup": "DISTURBANCES",
+    "latitude": "47.661260444",
+    "longitude": "-122.311996602",
+    "zone_beat": "U3"
+  },
+  {
+    "cad_cdw_id": "1000247",
+    "cad_event_number": "12000432984",
+    "census_tract": "5301.1009",
+    "district_sector": "U",
+    "event_clearance_code": "280",
+    "event_clearance_date": "2012-12-19T22 : 45 : 00.000",
+    "event_clearance_description": "SUSPICIOUS PERSON",
+    "event_clearance_group": "SUSPICIOUS CIRCUMSTANCES",
+    "event_clearance_subgroup": "SUSPICIOUS CIRCUMSTANCES",
+    "general_offense_number": "2012432984",
+    "hundred_block_location": "45XX BLOCK OF 19TH AVE NE",
+    "incident_location": {
+      "type": "Point",
+      "coordinates": [
+        -122.307232,
+        47.662154
+      ]
+    },
+    "latitude": "47.662154281",
+    "longitude": "-122.307231572",
+    "zone_beat": "U3"
+  },
+  {
+    "cad_cdw_id": "1000556",
+    "cad_event_number": "12000433389",
+    "census_tract": "5301.1007",
+    "district_sector": "U",
+    "event_clearance_code": "470",
+    "event_clearance_date": "2012-12-20T09 : 37 : 00.000",
+    "event_clearance_description": "PARKING VIOLATION (EXCEPT ABANDONED VEHICLES)",
+    "event_clearance_group": "TRAFFIC RELATED CALLS",
+    "event_clearance_subgroup": "PARKING VIOLATIONS",
+    "general_offense_number": "2012433389",
+    "hundred_block_location": "17 AV NE / NE 45 ST",
+    "incident_location": {
+      "type": "Point",
+      "coordinates": [
+        -122.309513,
+        47.661257
+      ]
+    },
+    "latitude": "47.66125702",
+    "longitude": "-122.309512535",
+    "zone_beat": "U3"
+  },
+  {
+    "cad_cdw_id": "1000644",
+    "cad_event_number": "12000433534",
+    "census_tract": "5302.3004",
+    "district_sector": "U",
+    "event_clearance_code": "415",
+    "event_clearance_date": "2012-12-20T11 : 51 : 00.000",
+    "event_clearance_description": "BLOCKING VEHICLE",
+    "event_clearance_group": "TRAFFIC RELATED CALLS",
+    "event_clearance_subgroup": "TRAFFIC RELATED CALLS",
+    "general_offense_number": "2012433534",
+    "hundred_block_location": "NE PACIFIC ST / NE PACIFIC PL",
+    "incident_location": {
+      "type": "Point",
+      "coordinates": [
+        -122.307618,
+        47.650541
+      ]
+    },
+    "latitude": "47.650541191",
+    "longitude": "-122.30761759",
+    "zone_beat": "U2"
+  },
+  {
+    "at_scene_time": "2012-12-20T13 : 18 : 00.000",
+    "cad_cdw_id": "1000775",
+    "cad_event_number": "12000433650",
+    "census_tract": "5301.1009",
+    "district_sector": "U",
+    "event_clearance_code": "440",
+    "event_clearance_date": "2012-12-20T14 : 19 : 00.000",
+    "event_clearance_description": "MOTORIST ASSIST",
+    "event_clearance_group": "TRAFFIC RELATED CALLS",
+    "event_clearance_subgroup": "TRAFFIC RELATED CALLS",
+    "general_offense_number": "2012433650",
+    "hundred_block_location": "NE 45 ST / 20 AV NE",
+    "incident_location": {
+      "type": "Point",
+      "coordinates": [
+        -122.306529,
+        47.661255
+      ]
+    },
+    "initial_type_description": "TRAFFIC - BLOCKING ROADWAY",
+    "initial_type_group": "TRAFFIC RELATED CALLS",
+    "initial_type_subgroup": "TRAFFIC RELATED CALLS",
+    "latitude": "47.661254515",
+    "longitude": "-122.30652927",
+    "zone_beat": "U2"
+  },
+  {
+    "cad_cdw_id": "1000941",
+    "cad_event_number": "12000434384",
+    "census_tract": "5301.4002",
+    "district_sector": "U",
+    "event_clearance_code": "460",
+    "event_clearance_date": "2012-12-21T01 : 25 : 00.000",
+    "event_clearance_description": "TRAFFIC (MOVING) VIOLATION",
+    "event_clearance_group": "TRAFFIC RELATED CALLS",
+    "event_clearance_subgroup": "TRAFFIC RELATED CALLS",
+    "general_offense_number": "2012434384",
+    "hundred_block_location": "NE 41 ST / BROOKLYN AV NE",
+    "incident_location": {
+      "type": "Point",
+      "coordinates": [
+        -122.314404,
+        47.656847
+      ]
+    },
+    "latitude": "47.656847466",
+    "longitude": "-122.314403546",
+    "zone_beat": "U2"
+  },
+  {
+    "cad_cdw_id": "1000959",
+    "cad_event_number": "12000434301",
+    "census_tract": "5302.3002",
+    "district_sector": "U",
+    "event_clearance_code": "281",
+    "event_clearance_date": "2012-12-21T01 : 11 : 00.000",
+    "event_clearance_description": "SUSPICIOUS VEHICLE",
+    "event_clearance_group": "SUSPICIOUS CIRCUMSTANCES",
+    "event_clearance_subgroup": "SUSPICIOUS CIRCUMSTANCES",
+    "general_offense_number": "2012434301",
+    "hundred_block_location": "MONTLAKE BV NE / NE 44 ST",
+    "incident_location": {
+      "type": "Point",
+      "coordinates": [
+        -122.30001,
+        47.660349
+      ]
+    },
+    "latitude": "47.660348798",
+    "longitude": "-122.300009692",
+    "zone_beat": "U2"
+  },
+  {
+    "at_scene_time": "2012-12-21T01 : 25 : 00.000",
+    "cad_cdw_id": "1001014",
+    "cad_event_number": "12000434397",
+    "census_tract": "5301.4002",
+    "district_sector": "U",
+    "event_clearance_code": "430",
+    "event_clearance_date": "2012-12-21T03 : 21 : 00.000",
+    "event_clearance_description": "ACCIDENT INVESTIGATION",
+    "event_clearance_group": "ACCIDENT INVESTIGATION",
+    "event_clearance_subgroup": "TRAFFIC RELATED CALLS",
+    "general_offense_number": "2012434397",
+    "hundred_block_location": "NE 41 ST / BROOKLYN AV NE",
+    "incident_location": {
+      "type": "Point",
+      "coordinates": [
+        -122.314404,
+        47.656847
+      ]
+    },
+    "initial_type_description": "ACC - WITH INJURIES (INCLUDES HIT AND RUN)",
+    "initial_type_group": "TRAFFIC RELATED CALLS",
+    "initial_type_subgroup": "ACCIDENT INVESTIGATION",
+    "latitude": "47.656847466",
+    "longitude": "-122.314403546",
+    "zone_beat": "U2"
+  },
+  {
+    "cad_cdw_id": "1001035",
+    "cad_event_number": "12000434445",
+    "census_tract": "5301.3000",
+    "district_sector": "U",
+    "event_clearance_code": "244",
+    "event_clearance_date": "2012-12-21T03 : 53 : 00.000",
+    "event_clearance_description": "NOISE DISTURBANCE",
+    "event_clearance_group": "DISTURBANCES",
+    "event_clearance_subgroup": "DISTURBANCES",
+    "general_offense_number": "2012434445",
+    "hundred_block_location": "43XX BLOCK OF 15TH AVE NE",
+    "incident_location": {
+      "type": "Point",
+      "coordinates": [
+        -122.312013,
+        47.660522
+      ]
+    },
+    "latitude": "47.660521621",
+    "longitude": "-122.312012811",
+    "zone_beat": "U2"
+  },
+  {
+    "cad_cdw_id": "100131",
+    "cad_event_number": "10000369664",
+    "census_tract": "5301.2008",
+    "district_sector": "U",
+    "event_clearance_code": "245",
+    "event_clearance_date": "2010-10-22T16 : 00 : 00.000",
+    "event_clearance_description": "DISTURBANCE, OTHER",
+    "event_clearance_group": "DISTURBANCES",
+    "event_clearance_subgroup": "DISTURBANCES",
+    "general_offense_number": "2010369664",
+    "hundred_block_location": "43XX BLOCK OF UNIVERSITY WAY NE",
+    "incident_location": {
+      "type": "Point",
+      "coordinates": [
+        -122.313149,
+        47.660532
+      ]
+    },
+    "latitude": "47.660532243",
+    "longitude": "-122.313148997",
+    "zone_beat": "U2"
+  }
+]
