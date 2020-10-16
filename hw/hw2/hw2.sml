@@ -17,6 +17,10 @@ val json_false = False
 val json_array = Array [Num 1.0, String "world", Null]
 val json_obj   = Object [("foo", json_pi), ("bar", json_array), ("ok", True)]
 
+(*this is what we are doing with the function*)
+val json_silly = Object [("b", True), ("n", Num (int_to_real 0))]
+
+
 (* some provided one-liners that use the standard library and/or some features
    we have not learned yet. (Only) the challenge problem will need more
    standard-library functions. *)
@@ -74,6 +78,41 @@ val large_incident_reports_list =
 Control.Print.printLength := 20;
 
 (**** PUT PROBLEMS 1-8 HERE ****)
+(* #1 *)
+fun make_silly_json (i: int) = 
+  let
+    fun const(j: int) = 
+      case j of 
+        0 => Object [("n", Num 1.0), ("b", True)] :: []
+        | 1 => Object [("n", Num 1.0), ("b", True)] :: []
+        | _ => Object [("n", Num (int_to_real(j))), ("b", True)] :: const(j - 1)
+  in
+    Array (const(i))
+  end
+  
+
+fun assoc (k, xs) =
+  case xs of
+    [] => NONE
+    | (k1, v1)::d => if k1 = k
+      then SOME v1
+      else assoc(k, d)
+
+fun dot (j, f) =
+  case j of
+    Object jj => assoc(f, jj)
+    | _ => NONE
+
+fun one_fields (jsony) =
+  let fun aux(lst, acc) =
+      case lst of
+        [] => acc
+        | (s1, j1)::xs => aux(xs, s1::acc)
+  in
+    case jsony of
+      Object j => aux(j, [])
+      | _ => []
+  end
 
 (* histogram and historgram_for_field are provided, but they use your 
    count_occurrences and string_values_for_field, so uncomment them 
@@ -103,7 +142,7 @@ fun histogram_for_field (f,js) =
 
 (**** PUT PROBLEMS 9-11 HERE ****)
 
-;Control.Print.printDepth := 3;
+Control.Print.printDepth := 3;
 Control.Print.printLength := 3;
 
 (**** PUT PROBLEMS 12-15 HERE ****)
