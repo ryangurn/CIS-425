@@ -1,0 +1,24 @@
+(a) int
+INT
+
+(b) int -> bool
+ARROW(INT, BOOL)
+
+(c) ('a -> 'b) -> ('a -> 'b)
+ARROW(ARROW(VAR "A", VAR "B"), ARROW(VAR "A", VAR "B"))
+
+(a) succ (pred 5)
+AST_APP(succ, AST_APP(AST_PRED, AST_NUM 5))
+
+(b) if 7 then true else 5
+AST_IF(AST_NUM 7, AST_BOOL true, AST_NUM 5)
+
+(c) fn a: int => f a a
+
+
+1. fun f (g, h) = g (h 0)
+
+2. fun apply (f, x) = f x
+
+3. fun reverse nil		= nil
+	| 	reverse (x::xs) = reverse xs
