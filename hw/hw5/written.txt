@@ -14,11 +14,58 @@ AST_APP(succ, AST_APP(AST_PRED, AST_NUM 5))
 AST_IF(AST_NUM 7, AST_BOOL true, AST_NUM 5)
 
 (c) fn a: int => f a a
-
+AST_FUN("a", INT, AST_APP(AST_APP(AST_ID "f", AST_ID "a"), AST_ID "a"))
 
 1. fun f (g, h) = g (h 0)
+f : (a -> b) * (int -> a) = b OR
+f : (a' -> b') * (int -> a') = b'
 
 2. fun apply (f, x) = f x
+apply : a * b -> c
+f : a : b -> c
+x : b
+
+apply : (a -> b) * a = b OR
+apply : (a' -> 'b) * a' = 'b 
 
 3. fun reverse nil		= nil
 	| 	reverse (x::xs) = reverse xs
+
+reverse : a -> b
+a : a list
+b : b list
+
+reverse : a list -> b list OR
+reverse : a' list -> b' list
+
+4. fun f(g, h) = g h + 2
+f : a * b -> int
+g : a : b -> int
+h : b
+
+f : (a -> int) * a -> int OR
+f : (a' -> int) * a' -> int
+
+
+5. fun f g = g(g) + 2
+f : a -> int
+g : a : a -> int
+
+Operation is not a function [circularity]
+
+6. fun ff f x y = if (f x y) then (f 3 y) else (f x "zero")
+ff : a -> b -> c -> d
+f : a : b -> c -> d : int -> string -> bool
+
+ff : (int -> string -> bool) -> int -> string -> bool
+
+
+7. fun gg f x y = if (f x y) then (f 3 y) else (f y "zero")
+gg : a -> b -> c -> d
+f : a : b -> c -> d : int -> string -> bool
+x : int
+y : string : int (string cannot be int, contradiction)
+
+8. fun hh f x y = if (f x y) then (f x y) else (f x "zero")
+
+hh : a -> b -> c -> d
