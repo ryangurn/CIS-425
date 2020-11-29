@@ -6,7 +6,7 @@ fun typ2str (VAR a)		= "'" ^ a
 |   typ2str INT			= "int"
 |   typ2str BOOL		= "bool"
 |   typ2str (ARROW(t1 as ARROW(_, _), t2)) =	(*  the tricky bit  *)
-      "(" ^ typ2str t1 ^ ") -> " ^ typ2str t2
+	  "(" ^ typ2str t1 ^ ") -> " ^ typ2str t2
 |   typ2str (ARROW(t1, t2))	= typ2str t1 ^ " -> " ^ typ2str t2
 
 
