@@ -81,7 +81,7 @@ fun interp_lazy (env, AST_ID i)          = interp_lazy(env, lookup env i)
 fun interp_lazy_static (env, AST_ID i)          = let val (e, env') = lookup2 env i in interp_lazy_static(env', e) end
 	| interp_lazy_static (env, AST_NUM n)         = RES_NUM n
 	| interp_lazy_static (env, AST_BOOL b)        = RES_BOOL b
-	| interp_lazy_static (env, AST_FUN (i,e))     = RES_FUN (i,e)
+	| interp_lazy_static (env, AST_FUN (i,e))     = RES_FUN2 (i,e, env)
 	| interp_lazy_static (env, AST_APP (AST_APP (AST_ADD, e1), e2)) = 
 											 (case interp_lazy_static (env, e1) of
 													RES_NUM n1 => (case interp_lazy_static (env, e2) of
@@ -90,7 +90,7 @@ fun interp_lazy_static (env, AST_ID i)          = let val (e, env') = lookup2 en
 												|  _         => raise (Error "AST_ADD not a number")
 											 )
 	| interp_lazy_static (env, AST_APP (e1,e2))   = (case interp_lazy_static (env, e1) of
-				 RES_FUN (v, body) => raise Not_implemented_yet
+				 RES_FUN2 (v, body, env') => interp_lazy_static(Env2 (update2 env' env v e2), body)
 			 | RES_SUCC => (case interp_lazy_static(env, e2) of
 													RES_NUM n1 => RES_NUM (n1+1)
 												| _ => RES_ERROR "RES_SUCC argument not a number")
